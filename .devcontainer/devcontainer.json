@@ -31,8 +31,10 @@
 				"ms-vscode.live-server" // add auto-update webserver to preview html files, right click on file an select Show Preview
 			],
 			"settings": {
-				"livePreview.previewDebounceDelay": 500 // auto-reload the default value of 50ms causes the preview to reload while new changes are begin made and remain unnoticed.
+				"livePreview.previewDebounceDelay": 500, // auto-reload the default value of 50ms causes the preview to reload while new changes are begin made and remain unnoticed.
+				"livePreview.openPreviewTarget": "External Browser" // work-around for bug, Live Preview in build-in browser has a bug that requires opening an external browser first
 			}
+
 		}
 	}
 }
