@@ -11,6 +11,32 @@ function setup() { // de code in deze functie wordt één keer uitgevoerd door d
   clear();
   background('blue');
 
+  // step 1: draw
+  fill('grey'); //opvulkleur wit
+  ellipse(200, 50, 50, 50); //hoofd
+  ellipse(190, 40, 10, 10); //linkeroog
+  ellipse(210, 40, 10, 10); //rechteroog
+  ellipse(200, 60, 30, 10); //mond
+
+/*
+  // step 2: isolate what is common
+  fill('grey'); //opvulkleur wit
+  ellipse(200, 50, 50, 50); //hoofd
+  ellipse(200 - 10, 50 - 10, 10, 10); //linkeroog
+  ellipse(200 + 10, 50 - 10, 10, 10); //rechteroog
+  ellipse(200, 50 + 10, 30, 10); //mond
+*/
+/*
+  // step 3: use variable for common value
+  X = 300; Y=50;
+  fill('red'); //opvulkleur wit
+  ellipse(X, Y, 50, 50); //hoofd
+  ellipse(X - 10, Y - 10, 10, 10); //linkeroog
+  ellipse(X + 10, Y - 10, 10, 10); //rechteroog
+  ellipse(X, Y + 10, 30, 10); //mond
+*/
+
+/* result: better readable and more flexible
 var x = 250;
   // teken 3 keer een smiley
   fill('white'); //opvulkleur wit
@@ -24,20 +50,6 @@ x=100;
   ellipse(x-10, 40, 10, 10); //linkeroog
   ellipse(x+10, 40, 10, 10); //rechteroog
   ellipse(x+0, 50 + 10, 30, 10); //mond
-
-/*
-  fill('grey'); //opvulkleur wit
-  ellipse(200, 50, 50, 50); //hoofd
-  ellipse(200 - 10, 50 - 10, 10, 10); //linkeroog
-  ellipse(200 + 10, 50 - 10, 10, 10); //rechteroog
-  ellipse(200, 50 + 10, 30, 10); //mond
-
-  X = 300; Y=50;
-  fill('red'); //opvulkleur wit
-  ellipse(X, Y, 50, 50); //hoofd
-  ellipse(X - 10, Y - 10, 10, 10); //linkeroog
-  ellipse(X + 10, Y - 10, 10, 10); //rechteroog
-  ellipse(X, Y + 10, 30, 10); //mond
 */
 }
 
